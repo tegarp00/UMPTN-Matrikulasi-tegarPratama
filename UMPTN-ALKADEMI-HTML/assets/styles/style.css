@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body {
+    width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        width: auto;
+    }
+    main {
+        margin: 0 .75rem;
+    }
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+hr {
+    margin: .75rem 0;
+}
+
+code {
+    display: block;
+    padding: .75rem;
+    background-color: whitesmoke;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content {
+    font-size: 18px;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+/**
+ * Navbar
+ */
+nav {
+    position: relative;
+    display: flex;
+    padding: 1rem 0;
+}
+
+nav .start,
+nav .end {
+    display: flex;
+}
+
+nav .end {
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+nav a {
+    padding: .5rem;
+    transition: background-color .3s ease-out;
+    border-radius: 8px;
+    font-size: large;
+}
+
+nav a:hover {
+    background-color: rgb(243, 247, 248);
+}
+
+/**
+ * Header profile
+ */
+.header {
+    display: flex;
+    justify-content: center;
+}
+figure img {
+    height: 268px;
+    border-radius: 30%;
+    border: 1px solid #e1e4e8;
+}
+
+figure figcaption {
+    font-size: 1.75rem;
+}
+
+/**
+ * Columns
+ */
+.columns {
+    margin: -.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.column {
+    padding: .75rem;
+    width: 50%;
+}
+
+/* card */
+.card {
+    transition: background-color .3s ease-out;
+    border-radius: 8px;
+}
+.card:hover {
+    background-color: whitesmoke;
+}
+
+/* footer */
+footer {
+    padding: 1rem;
+    background-color: rgb(236, 236, 236);
+}
